@@ -1,0 +1,16 @@
+Generators Operators
+====================
+
+Generators Operator are Operator that do some common rig setup that is repetitive
+
+.. image:: /images/Generator_Operators.png
+
+.. toctree::
+   :maxdepth: 1
+
+   Generate_IK
+   Generate_Stretch_Chain
+   Generate_Eyelid
+   Generate_Twist_Bone
+   Generate_Hydraulic
+   Generate_Basic_Mechanical _Joints

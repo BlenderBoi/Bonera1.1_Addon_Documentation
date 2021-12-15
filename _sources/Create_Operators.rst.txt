@@ -1,0 +1,12 @@
+Create Operators
+================
+
+.. image:: /images/Create_Operators.png
+
+.. toctree::
+   :maxdepth: 1
+   
+   Create_Bone_from_Selected
+   Create_Empty_From_Selected
+   Add_Bone_Shape
+   Mirror_Bone_Shape

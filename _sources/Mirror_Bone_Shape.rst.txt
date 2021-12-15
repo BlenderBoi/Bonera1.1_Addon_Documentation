@@ -1,0 +1,12 @@
+Mirror Bone Shape
+=================
+
+.. list-table::
+
+   * - Pose Mode
+
+.. image:: /images/MIrrorBoneShape.gif
+
+Mirror Selected Bone's Shape
+
+

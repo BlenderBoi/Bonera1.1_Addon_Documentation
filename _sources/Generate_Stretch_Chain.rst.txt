@@ -1,0 +1,36 @@
+Generate Stretch Chain
+----------------------
+
+.. list-table::
+
+   * - Edit Armature
+     - Pose
+
+.. image:: /images/Generate_Stretch_Chain.gif
+
+Make Bone Stretch to other selected bone that have it's head with same location with it's tail
+
+.. admonition:: Note
+
+    It will Do it to Selected Bones, This Works by checking the Bone Head Location instead of checking parenting
+
+.. image:: /images/Generate_Stretch_Chain.png
+
+
+
+**Target Bone**
+   Prefix Use for the Created Target Bones
+
+**Target Bone Layer**
+   Bone Layer for Created Target Bones
+
+**Pre Clear Constraint**
+   Clear All Constraint from Selected Bone Before Operation
+
+**Tail Offset**
+   Position of Tail Offset from Head
+
+
+
+
+

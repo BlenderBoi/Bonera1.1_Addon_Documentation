@@ -1,0 +1,36 @@
+Generate Basic Mechanical Joints
+--------------------------------
+.. list-table::
+
+   * - Edit Armature
+     - Pose
+
+.. image:: /images/Generate_Basic_Mechanical_Joint.gif
+
+Add Simple Limit Rotation Constraint to limit the bone rotation to one axis
+
+.. image:: /images/Generate_Basic_Mechanical_Joint.png
+
+**Joint Type:**
+***************
+
+    **Hinge**
+      Choose to Limit to X or Z Axis of Bone
+
+    **Pivot / Twist**
+      Choose to Limit to Y Axis of Bone
+
+**Hinge Axis:** Choose the Axis to Limit to
+
+**Hinge Min / Hinge Max:** Set the Limit of Minimum and Maximum angle if Limit Angle is On
+
+**Limit Angle:** Limit the Angle of the Hinge
+
+**Affect Transform:** Turn on Affect Transform on the Constraint
+
+**Lock Location:** Lock the Location of the bone
+
+**Lock Scale:** Lock the Scale of the bone
+
+
+

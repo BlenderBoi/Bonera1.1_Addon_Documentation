@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Single Driver Bone &mdash; Bonera 1.1.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Generate Driver Bone" href="Generate_Driver_Bones.html" />
+    <link rel="prev" title="Driver Tool Operators" href="Drivers_Tool.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Bonera
+            <img src="_static/BoneraLogo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sections:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Bonera_Toolkit.html">Bonera Toolkit</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Bonera_Toolkit.html#panel">Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Bonera_Toolkit.html#menu">Menu</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Bonera_Toolkit.html#operators">Operators</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Create_Operators.html">Create Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Bone_Tools_Operators.html">Bone Tool Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Generators_Operators.html">Generators Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Utility_Operators.html">Utility Operators</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="Drivers_Tool.html">Driver Tool Operators</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Add Single Driver Bone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Generate_Driver_Bones.html">Generate Driver Bone</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Cleanup_Operators.html">Cleanup Operators</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Pseudo_Bone_Layer.html">Pseudo Bone Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pair_List_Renamer.html">Pair List Renamer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bone_UI_Slider_Generator.html">Bone UI Slider Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cuztomize_Your_Own_Custom_Bone_Shape.html">Add Your Own Custom Bone Shape</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Bonera</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="Bonera_Toolkit.html">Bonera Toolkit</a> &raquo;</li>
+          <li><a href="Drivers_Tool.html">Driver Tool Operators</a> &raquo;</li>
+      <li>Add Single Driver Bone</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Add_Single_Driver_Bone.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="add-single-driver-bone">
+<h1>Add Single Driver Bone<a class="headerlink" href="#add-single-driver-bone" title="Permalink to this headline"></a></h1>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Edit Armature</p></td>
+</tr>
+</tbody>
+</table>
+<img alt="_images/SingleDriverBoneDemo.gif" src="_images/SingleDriverBoneDemo.gif" />
+<p>This Operator Creates A Bone Driving a Property</p>
+<img alt="_images/Create_Single_Driver_Bone.png" src="_images/Create_Single_Driver_Bone.png" />
+<section id="driven-options">
+<h2>Driven Options<a class="headerlink" href="#driven-options" title="Permalink to this headline"></a></h2>
+<img alt="_images/Add_Single_Driver_Bone_Driven_Property.png" src="_images/Add_Single_Driver_Bone_Driven_Property.png" />
+<p><strong>Driven Property:</strong> Types of Driven Property</p>
+<dl class="simple">
+<dt><strong>Type of Property</strong></dt><dd><dl class="simple">
+<dt>Custom Properties</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>Object</dt><dd><p>Custom Property of an Object</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Data</dt><dd><p>Custom Property of an Data of the Object (Mesh Data / Armature Data / Curve Data)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Pose Bone (Armature Object)</dt><dd><p>Custom Property of a Pose Bone</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt>Shapekeys (Mesh Object)</dt><dd><ul class="simple">
+<li><p>Shapekey to be driven by the Driver Bone</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p><strong>Object:</strong> Object with the property to be driven</p>
+<p><strong>Properties:</strong> The Property to be Driven</p>
+</section>
+<section id="driver-options">
+<h2>Driver Options<a class="headerlink" href="#driver-options" title="Permalink to this headline"></a></h2>
+<img alt="_images/Create_Single_Driver_Bone_Driver_Options.png" src="_images/Create_Single_Driver_Bone_Driver_Options.png" />
+<p><strong>Driver</strong>: Property of the bone that drives the Driven Property</p>
+<p><strong>Space</strong>: The Space the Driver is using</p>
+</section>
+<section id="limit-options">
+<h2>Limit Options<a class="headerlink" href="#limit-options" title="Permalink to this headline"></a></h2>
+<img alt="_images/Add_Single_Driver_Bone_Limit_Options.png" src="_images/Add_Single_Driver_Bone_Limit_Options.png" />
+<p><strong>Limit Constraints:</strong> Add Limit Constraint to the Driver Bone</p>
+<p><strong>Lock Transform:</strong> Lock the relevant Transform channel</p>
+<p><strong>Limit Min:</strong> Set the Minimum limit for the constraints</p>
+<p><strong>Limit Max:</strong> Set the Maximum limit for the constraints</p>
+<p><strong>Map Value to Min Max:</strong> Map the Value of the driven property from 0 - 1 to Minimum Limit and Maximum Limit</p>
+</section>
+<section id="ui-settings">
+<h2>UI Settings<a class="headerlink" href="#ui-settings" title="Permalink to this headline"></a></h2>
+<div class="admonition-info admonition">
+<p class="admonition-title">Info</p>
+<p>Only Work if Driver setting is set to Location X</p>
+</div>
+<img alt="_images/Add_Single_Driver_Bone_UI_Settings.png" src="_images/Add_Single_Driver_Bone_UI_Settings.png" />
+<dl>
+<dt><strong>Generate UI Bone:</strong></dt><dd><p>Generate the UI Bone with bone shape Including a Label Bone, Slider Bar Bone, and Add A Slider Bone Shape to Driver Bone</p>
+</dd>
+<dt><strong>Label Bone:</strong></dt><dd><p>Generate the Label Bone with it’s bone shape text object</p>
+<blockquote>
+<div><p><strong>Label Offset:</strong> Offset Amount of Label Bone From Slider Bone</p>
+</div></blockquote>
+</dd>
+<dt><strong>Slider Bar:</strong></dt><dd><p>Generate Slider Bar with Bone Shape</p>
+<blockquote>
+<div><p><strong>Slider Bar Thickness:</strong> Thickness of Slider Bar</p>
+</div></blockquote>
+</dd>
+</dl>
+<p><strong>Slider Shape:</strong> Generate Slider Bone Shape for Driver Bone</p>
+<div class="admonition-info admonition">
+<p class="admonition-title">Info</p>
+<p>Driver Bone, Label Name Bone and Slider Bone will be generated with this. The Label will use the Property Name as Label, You can Edit the Bone Shape Label as a text object</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Drivers_Tool.html" class="btn btn-neutral float-left" title="Driver Tool Operators" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Generate_Driver_Bones.html" class="btn btn-neutral float-right" title="Generate Driver Bone" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, BlenderBoi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

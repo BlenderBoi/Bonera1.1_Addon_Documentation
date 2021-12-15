@@ -1,0 +1,28 @@
+Generate Twist Bone
+-------------------
+.. list-table::
+
+   * - Edit Armature
+     - Pose
+
+.. image:: /images/Generate_Twist_Bone.gif
+
+Generate A Simple Twist Bone Setup
+
+.. admonition:: Note
+
+    This Operators Require the Selected Bones to have at least one child, if multiple child exist, it will use the first child. 
+
+.. image:: /images/Generate_Twist_Bone.png
+
+**Subdivide:** Amount of Cuts to the Bone
+
+**Twist Control Layer:** Bone Layer for Twist Control Bone
+
+**Deform Bone Layer:** Bone Layer for generated twist deformation bones
+
+.. admonition:: Note
+
+    The Selected Bone "Use Deform" will be turn off, while the generated "Twist Bone" will have "Use Deform Turned On Instead"
+
+

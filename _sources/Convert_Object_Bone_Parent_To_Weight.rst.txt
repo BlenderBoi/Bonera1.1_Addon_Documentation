@@ -1,0 +1,18 @@
+Convert Object Bone Parent To Weight
+====================================
+
+.. list-table::
+
+   * - Object
+
+.. image:: /images/Convert_Object_Bone_Parent_To_Weight.png
+
+Create Vertex Group and Weight Paint For Selected Objects if the Object is a Child of a Bone
+
+**Add Armature Modifier**
+   Add Armature Modifier to Relevant Objects
+
+**Parent To Armature**
+   Parent the Objects to Armature
+
+

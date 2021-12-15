@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Bone from Selected &mdash; Bonera 1.1.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Create Empties from Selected" href="Create_Empty_From_Selected.html" />
+    <link rel="prev" title="Create Operators" href="Create_Operators.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Bonera
+            <img src="_static/BoneraLogo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sections:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Bonera_Toolkit.html">Bonera Toolkit</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Bonera_Toolkit.html#panel">Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Bonera_Toolkit.html#menu">Menu</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Bonera_Toolkit.html#operators">Operators</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="Create_Operators.html">Create Operators</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Create Bone from Selected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Create_Empty_From_Selected.html">Create Empties from Selected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Add_Bone_Shape.html">Add / Apply Bone Shape</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Mirror_Bone_Shape.html">Mirror Bone Shape</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Bone_Tools_Operators.html">Bone Tool Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Generators_Operators.html">Generators Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Utility_Operators.html">Utility Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Drivers_Tool.html">Driver Tool Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cleanup_Operators.html">Cleanup Operators</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Pseudo_Bone_Layer.html">Pseudo Bone Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pair_List_Renamer.html">Pair List Renamer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bone_UI_Slider_Generator.html">Bone UI Slider Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cuztomize_Your_Own_Custom_Bone_Shape.html">Add Your Own Custom Bone Shape</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Bonera</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="Bonera_Toolkit.html">Bonera Toolkit</a> &raquo;</li>
+          <li><a href="Create_Operators.html">Create Operators</a> &raquo;</li>
+      <li>Create Bone from Selected</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Create_Bone_from_Selected.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="create-bone-from-selected">
+<h1>Create Bone from Selected<a class="headerlink" href="#create-bone-from-selected" title="Permalink to this headline"></a></h1>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Object</p></td>
+<td><p>Edit Mesh</p></td>
+<td><p>Edit Curve</p></td>
+<td><p>Edit Armature</p></td>
+<td><p>Pose</p></td>
+</tr>
+</tbody>
+</table>
+<section id="demo">
+<h2>DEMO<a class="headerlink" href="#demo" title="Permalink to this headline"></a></h2>
+<section id="object-mode-individual">
+<h3>Object Mode (Individual)<a class="headerlink" href="#object-mode-individual" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Object_Mode_Individual.gif" src="_images/Create_Bone_Object_Mode_Individual.gif" />
+</section>
+<section id="object-mode-median">
+<h3>Object Mode (Median)<a class="headerlink" href="#object-mode-median" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Object_Mode_Median.gif" src="_images/Create_Bone_Object_Mode_Median.gif" />
+</section>
+<section id="edit-mesh-mode-individual">
+<h3>Edit Mesh Mode (Individual)<a class="headerlink" href="#edit-mesh-mode-individual" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Edit_Mesh_Mode_Individual.gif" src="_images/Create_Bone_Edit_Mesh_Mode_Individual.gif" />
+</section>
+<section id="edit-mesh-mode-median">
+<h3>Edit Mesh Mode (Median)<a class="headerlink" href="#edit-mesh-mode-median" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Edit_Mesh_Mode_Median.gif" src="_images/Create_Bone_Edit_Mesh_Mode_Median.gif" />
+</section>
+<section id="edit-curve-mode-individual">
+<h3>Edit Curve Mode (Individual)<a class="headerlink" href="#edit-curve-mode-individual" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Edit_Curve_Mode_Individual.gif" src="_images/Create_Bone_Edit_Curve_Mode_Individual.gif" />
+</section>
+<section id="edit-curve-mode-median">
+<h3>Edit Curve Mode (Median)<a class="headerlink" href="#edit-curve-mode-median" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Edit_Curve_Mode_Median.gif" src="_images/Create_Bone_Edit_Curve_Mode_Median.gif" />
+</section>
+<section id="edit-armature-pose-mode-individual">
+<h3>Edit Armature / Pose Mode (Individual)<a class="headerlink" href="#edit-armature-pose-mode-individual" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Edit_Armature_Mode_Individual.gif" src="_images/Create_Bone_Edit_Armature_Mode_Individual.gif" />
+</section>
+<section id="edit-armature-pose-mode-median">
+<h3>Edit Armature / Pose Mode (Median)<a class="headerlink" href="#edit-armature-pose-mode-median" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Edit_Armature_Mode_Median.gif" src="_images/Create_Bone_Edit_Armature_Mode_Median.gif" />
+<p>This Operator Create bone from Selected Objects / Elements base on the context.</p>
+<p>This Operator can Create One Bone at the Selected Midpoint or It can Create A Bone for each selected items.</p>
+<img alt="_images/Create_Bones_From_Selected_Operator.png" src="_images/Create_Bones_From_Selected_Operator.png" />
+<section id="basic-parameter">
+<h4>Basic Parameter<a class="headerlink" href="#basic-parameter" title="Permalink to this headline"></a></h4>
+<p><strong>Prefix:</strong> Add Prefix to Base name Base on Preferences</p>
+<p><strong>Base Name:</strong> Base Name of the Bone</p>
+<p><strong>Suffix:</strong> Add Suffix to Base name Base on Preferences</p>
+<p><strong>Deform:</strong> Turn On/Off Deform for created bone</p>
+<img alt="_images/Create_Bones_From_Selected_Basic_Parameter.png" src="_images/Create_Bones_From_Selected_Basic_Parameter.png" />
+</section>
+</section>
+<section id="mode">
+<h3><strong>Mode:</strong><a class="headerlink" href="#mode" title="Permalink to this headline"></a></h3>
+<dl class="simple">
+<dt><strong>Median</strong></dt><dd><p>Create One Bone at the Selected Object / Elements</p>
+</dd>
+<dt><strong>Individual</strong></dt><dd><p>Create Bones for each Selected Object / Elements</p>
+</dd>
+</dl>
+<section id="contextual-option">
+<h4>Contextual Option<a class="headerlink" href="#contextual-option" title="Permalink to this headline"></a></h4>
+</section>
+</section>
+<section id="use-hierarchy-individual-with-object-mode-only">
+<h3><strong>Use Hierarchy (Individual with Object Mode Only)</strong><a class="headerlink" href="#use-hierarchy-individual-with-object-mode-only" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Use_Hierarchy.png" src="_images/Create_Bone_Use_Hierarchy.png" />
+<p>Create the Bones with the Hierarchy mimicking the Reference Object’s Hierarchy</p>
+</section>
+<section id="position-mode-object-mode-only">
+<h3><strong>Position Mode (Object Mode Only)</strong><a class="headerlink" href="#position-mode-object-mode-only" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Position_Mode.png" src="_images/Create_Bone_Position_Mode.png" />
+<p>Ways to Calculate Midpoint of the Objects</p>
+<dl class="simple">
+<dt><strong>Origin</strong></dt><dd><p>Use Object’s Origin to create bone or calculate Median</p>
+</dd>
+<dt><strong>Geometry</strong></dt><dd><p>Use Geometry’s Midpoint/Median for Mesh, Curve or Armature Object to create bone or calculate Median, Other type of Object will use it’s Origin</p>
+</dd>
+<dt><strong>Bounding Box</strong></dt><dd><p>Use Geometry’s Bounding Box Center for Mesh, Curve or Armature Object to create bone or calculate Median, Other type of Object will use it’s Origin</p>
+</dd>
+</dl>
+</section>
+<section id="elements">
+<h3><strong>Elements</strong><a class="headerlink" href="#elements" title="Permalink to this headline"></a></h3>
+<p>Elements use to create the Bones</p>
+<dl class="simple">
+<dt><strong>Edit Mesh (Individual Mode Only)</strong></dt><dd><ul class="simple">
+<li><p>Vertices</p></li>
+<li><p>Edges</p></li>
+<li><p>Faces</p></li>
+</ul>
+</dd>
+</dl>
+<img alt="_images/Create_Bone_Element_Edit_Mesh.png" src="_images/Create_Bone_Element_Edit_Mesh.png" />
+<dl class="simple">
+<dt><strong>Edit Armature / Pose</strong></dt><dd><ul class="simple">
+<li><p><strong>Center:</strong> Use Bone Center to Create Bone or to Calculate Median or Bounding Box</p></li>
+<li><p><strong>Head:</strong> Use Bone Head to Create Bone or to Calculate Median or Bounding Box</p></li>
+<li><p><strong>Tail:</strong> Use Bone Tail to Create Bone or to Calculate Median or Bounding Box</p></li>
+</ul>
+</dd>
+</dl>
+<img alt="_images/Create_Bone_Element_Edit_Armature.png" src="_images/Create_Bone_Element_Edit_Armature.png" />
+</section>
+<section id="bezier-handle-edit-curve-only">
+<h3><strong>Bezier Handle (Edit Curve Only)</strong><a class="headerlink" href="#bezier-handle-edit-curve-only" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Bezier_Handle.png" src="_images/Create_Bone_Bezier_Handle.png" />
+<p>Create Bones For Bezier Handle</p>
+</section>
+<section id="parent-bone-edit-armature-individual-mode-and-own-armature-settings">
+<h3><strong>Parent Bone (Edit Armature, Individual Mode and Own Armature Settings)</strong><a class="headerlink" href="#parent-bone-edit-armature-individual-mode-and-own-armature-settings" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Parent_Bone.png" src="_images/Create_Bone_Parent_Bone.png" />
+<p>Parent the created bone to it’s reference bone, this only works in Edit Armature Mode, Individual Mode, and Own Armature Settings.</p>
+<section id="bind-option">
+<h4>Bind Option<a class="headerlink" href="#bind-option" title="Permalink to this headline"></a></h4>
+</section>
+</section>
+<section id="bind-mode">
+<h3><strong>Bind Mode</strong><a class="headerlink" href="#bind-mode" title="Permalink to this headline"></a></h3>
+<p>Method to bind the selected objects/elements to created bones</p>
+<img alt="_images/Create_Bone_Bind_Option_One.png" src="_images/Create_Bone_Bind_Option_One.png" />
+<dl>
+<dt><strong>Weight</strong></dt><dd><p>Create Vertex Group and using the created bones for mesh Object</p>
+<dl class="simple">
+<dt>Sub Options</dt><dd><ul class="simple">
+<li><p><strong>Add Armature Modifier:</strong> Add Armature Modifier to relevant objects</p></li>
+<li><p><strong>Parent To Armature:</strong> Parent relevant object to Armature</p></li>
+<li><p><strong>Parent None Mesh:</strong> Parent Non Mesh Object to created Bone</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt><strong>Parent Bone</strong></dt><dd><p>Parent Object / Objects to created Bone</p>
+</dd>
+</dl>
+</section>
+<section id="hook">
+<h3><strong>Hook</strong><a class="headerlink" href="#hook" title="Permalink to this headline"></a></h3>
+<p>Hook Curve Points to selected</p>
+<img alt="_images/Create_Bone_Bind_Option_Two.png" src="_images/Create_Bone_Bind_Option_Two.png" />
+<section id="tail-option">
+<h4>Tail Option<a class="headerlink" href="#tail-option" title="Permalink to this headline"></a></h4>
+<img alt="_images/Create_Bone_Tail_Options.png" src="_images/Create_Bone_Tail_Options.png" />
+</section>
+</section>
+<section id="tail-mode">
+<h3><strong>Tail Mode</strong><a class="headerlink" href="#tail-mode" title="Permalink to this headline"></a></h3>
+<p>Set Up Bone’s Tail Position</p>
+<dl>
+<dt><strong>Offset Tail From Head (Global)</strong></dt><dd><p>Offset the tail from the head by the offset Vector in the Global Space</p>
+</dd>
+<dt><strong>Offset Tail From Head (Local)</strong></dt><dd><p>Offset the tail from the head by the offset Vector in the Local Space</p>
+</dd>
+<dt><strong>3D Cursor</strong></dt><dd><p>Use the position of 3D Cursor as the position of the bone’s tail</p>
+</dd>
+<dt><strong>Normal (Edit Mesh Only)</strong></dt><dd><p>Offset the tail from the head by the offset Vector in using the Normal of the Edge Center, Face or Vertex as Angle</p>
+</dd>
+<dt><strong>Roll (Edit Armature and Pose)</strong></dt><dd><p>Offset the tail from the head by the offset Vector in using the Roll of the Bone as Angle</p>
+</dd>
+<dt><strong>Extend (Edit Armature and Pose)</strong></dt><dd><p>Align the Created bone to the Reference Bone’s, matching it’s orientation and roll</p>
+</dd>
+<dt>Edit Mesh Mode:</dt><dd><img alt="_images/TailMode01.png" src="_images/TailMode01.png" />
+</dd>
+<dt>Edit Armature / Pose Mode:</dt><dd><img alt="_images/Tail_Mode02.png" src="_images/Tail_Mode02.png" />
+</dd>
+</dl>
+</section>
+<section id="tail-offset-amount">
+<h3><strong>Tail Offset Amount</strong><a class="headerlink" href="#tail-offset-amount" title="Permalink to this headline"></a></h3>
+<img alt="_images/Create_Bone_Tail_Options.png" src="_images/Create_Bone_Tail_Options.png" />
+<p>The Vector Used to offset the tail</p>
+</section>
+<section id="flip-bone">
+<h3><strong>Flip Bone</strong><a class="headerlink" href="#flip-bone" title="Permalink to this headline"></a></h3>
+<p>Flip the Position of the Head and Tail of the Created Bones</p>
+<section id="armature-option">
+<h4><strong>Armature Option</strong><a class="headerlink" href="#armature-option" title="Permalink to this headline"></a></h4>
+<img alt="_images/CBOH_Armature_Exist.png" src="_images/CBOH_Armature_Exist.png" />
+</section>
+</section>
+<section id="armature-name-armature-picker">
+<h3><strong>Armature Name / Armature Picker</strong><a class="headerlink" href="#armature-name-armature-picker" title="Permalink to this headline"></a></h3>
+<p>Name for New Armature or Pick a Existing Armature to Add Bone to</p>
+</section>
+<section id="armature-choice">
+<h3><strong>Armature Choice</strong><a class="headerlink" href="#armature-choice" title="Permalink to this headline"></a></h3>
+<p>Choose to create New Armature or Use Existing Armature</p>
+<blockquote>
+<div><img alt="_images/CBOH_Armature_Exist.png" src="_images/CBOH_Armature_Exist.png" />
+<p><strong>New:</strong> Create bone to a New Armature that uses the Name Above</p>
+<p><strong>Exist:</strong> Create bone to existing Armature above</p>
+</div></blockquote>
+<div class="admonition-edit-armature-or-pose admonition">
+<p class="admonition-title">Edit Armature Or Pose</p>
+<p>If you are in Edit Armaute or Pose Mode, you have more options</p>
+<blockquote>
+<div><p><strong>Own Armature (Individual Only):</strong> The Bone Created will be created on it’s own Armature</p>
+<p><strong>Active Armature:</strong> The Bone Created will be created on the active Armature Object</p>
+<p><strong>Choose Armature:</strong> Works the Same way other Mode</p>
+</div></blockquote>
+<img alt="_images/Create_Bone_Armature_Option_Armature.png" src="_images/Create_Bone_Armature_Option_Armature.png" />
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Create_Operators.html" class="btn btn-neutral float-left" title="Create Operators" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Create_Empty_From_Selected.html" class="btn btn-neutral float-right" title="Create Empties from Selected" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, BlenderBoi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+Convert Curve to Bone (Experimental)
+====================================
+
+.. list-table::
+
+   * - Object
+
+.. image:: /images/Convert_Curve_To_Bones.gif
+
+General Options
+---------------
+
+Convert Whole Curve into Bone Chain
+
+.. image:: /images/Convert_Curve_To_Bone.png
+
+
+
+**Set Resolution**
+   Set the resolution of the converted bone chain explicitly
+
+**Resolution**
+   The Resolution to use for converting curve to bone
+
+

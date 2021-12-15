@@ -1,0 +1,32 @@
+Fix IK Angle
+============
+
+.. list-table::
+
+   * - Pose Mode
+
+.. image:: /images/Fix_Pole_Angle.gif
+
+General Options
+---------------
+
+Adjust IK Constraint's Pole Angle or Align Bone Roll Correctly to Fix the IK Angle
+
+This Operator Might not Work Perfectly if your Bone is in Wierd or awkward Orientation
+
+.. image:: /images/Fix_IK_Angle.png
+
+**Method:**
+***********
+**Pole Angle**
+  Fix IK Angle By Changing the Pole Angle for IK Constraint
+
+**Align Bone**
+  Align Bone Roll to the Pole Bone, Will Set IK Constraint Pole Angle to 0 
+
+.. admonition:: Important!
+
+   Align Bone Method Might Mess Up Animation if Animated
+
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convert Curve to Bone (Experimental) &mdash; Bonera 1.1.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Fix IK Angle" href="Fix_IK_Angle.html" />
+    <link rel="prev" title="Smooth All Weights" href="Smooth_All_Weights.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Bonera
+            <img src="_static/BoneraLogo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Sections:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Bonera_Toolkit.html">Bonera Toolkit</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Bonera_Toolkit.html#panel">Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Bonera_Toolkit.html#menu">Menu</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Bonera_Toolkit.html#operators">Operators</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Create_Operators.html">Create Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Bone_Tools_Operators.html">Bone Tool Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Generators_Operators.html">Generators Operators</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="Utility_Operators.html">Utility Operators</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Orphan_Parents.html">Orphan Parents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Parent_Object_to_Bone_by_Name.html">Parent Object to Bone by Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Convert_Object_Bone_Parent_To_Weight.html">Convert Object Bone Parent To Weight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Smooth_All_Weights.html">Smooth All Weights</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Convert Curve to Bone (Experimental)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Fix_IK_Angle.html">Fix IK Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Create_Vertex_Group_From_Objects.html">Create Vertex Group From Objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Duplicate_And_Constraint.html">Duplicate And Constraint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Constraint_to_Armature.html">Constraint to Armature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Constraint_to_Armature.html#constraint-selected-bones-to-armature">Constraint Selected Bones to Armature</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Drivers_Tool.html">Driver Tool Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cleanup_Operators.html">Cleanup Operators</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Pseudo_Bone_Layer.html">Pseudo Bone Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pair_List_Renamer.html">Pair List Renamer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bone_UI_Slider_Generator.html">Bone UI Slider Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Cuztomize_Your_Own_Custom_Bone_Shape.html">Add Your Own Custom Bone Shape</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Bonera</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="Bonera_Toolkit.html">Bonera Toolkit</a> &raquo;</li>
+          <li><a href="Utility_Operators.html">Utility Operators</a> &raquo;</li>
+      <li>Convert Curve to Bone (Experimental)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Convert_Curve_To_Bone.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="convert-curve-to-bone-experimental">
+<h1>Convert Curve to Bone (Experimental)<a class="headerlink" href="#convert-curve-to-bone-experimental" title="Permalink to this headline"></a></h1>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Object</p></td>
+</tr>
+</tbody>
+</table>
+<img alt="_images/Convert_Curve_To_Bones.gif" src="_images/Convert_Curve_To_Bones.gif" />
+<section id="general-options">
+<h2>General Options<a class="headerlink" href="#general-options" title="Permalink to this headline"></a></h2>
+<p>Convert Whole Curve into Bone Chain</p>
+<img alt="_images/Convert_Curve_To_Bone.png" src="_images/Convert_Curve_To_Bone.png" />
+<dl class="simple">
+<dt><strong>Set Resolution</strong></dt><dd><p>Set the resolution of the converted bone chain explicitly</p>
+</dd>
+<dt><strong>Resolution</strong></dt><dd><p>The Resolution to use for converting curve to bone</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Smooth_All_Weights.html" class="btn btn-neutral float-left" title="Smooth All Weights" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Fix_IK_Angle.html" class="btn btn-neutral float-right" title="Fix IK Angle" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, BlenderBoi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

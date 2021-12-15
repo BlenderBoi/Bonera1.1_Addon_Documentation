@@ -1,0 +1,31 @@
+Duplicate And Constraint
+========================
+
+.. list-table::
+
+   * - Object
+     - Edit Armature
+     - Pose
+
+.. image:: /images/Duplicate_And_Constraint.gif
+
+Duplicate and Constraint will Duplicate the Selected Bones (Edit Armature / Pose Mode) or All Bones (Object Mode)
+
+.. image:: /images/DuplicateAndConstraint.png
+
+**Mode**
+   Choose the Method to Rename Your Bone
+
+**Prefix / Suffix / Find and Replace**
+   String Used for Renaming
+
+**Position**
+   Add the Bone Shape at the Center or 3D Cursor
+
+**Bone Layer**
+   Set the Duplicated Bone's Layer
+
+**Deform**
+   Make Duplicated Bones Deform Bone / Non Deform Bone
+
+

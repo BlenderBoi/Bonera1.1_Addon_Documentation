@@ -1,0 +1,28 @@
+Generate Eyelid
+---------------
+
+.. list-table::
+
+   * - Edit Armature
+     - Pose
+
+.. image:: /images/Generate_Eyelid.gif
+
+Generate A Eyelid Setup, Select all the Eyelid Bone, and Eyeball Bone Last (Active)
+
+.. image:: /images/Generate_Eyelid.png
+
+**Influence:** The Influence Strength of Eyelid Get Affected by the Rotation of Eyeball
+
+**Parent Mode:** 
+
+    **Eye Parent:** Parent the Eyelid Bone to Eyeball's Parent
+    
+    **Bone:** Parent the Eyelid Bone to Picked Bone
+
+        **Parent Bone:** Bone Picker for Bone Parent Mode
+
+
+**Names And Layers Settings:** Set Individual Generated Bone's Prefix and Bone Layers
+
+
